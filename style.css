@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: white;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+
+    background: #1e293b;
+
+    padding: 35px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #cbd5e1;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+/* Colour Pickers */
+
+.picker-group {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 20px;
+}
+
+.picker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.picker label {
+    font-weight: bold;
+}
+
+input[type="color"] {
+    width: 110px;
+    height: 60px;
+
+    border: 3px solid #475569;
+    border-radius: 10px;
+
+    cursor: pointer;
+    background: transparent;
+}
+
+.picker span {
+    color: #cbd5e1;
+    font-size: 14px;
+    font-family: monospace;
+}
+
+/* Button */
+
+button {
+    display: block;
+
+    margin: 10px auto 25px;
+
+    padding: 12px 22px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #14b8a6;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #0d9488;
+    transform: translateY(-2px);
+}
+
+/* Preview */
+
+.preview {
+    min-height: 150px;
+
+    border-radius: 12px;
+
+    padding: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    font-size: 25px;
+    font-weight: bold;
+
+    border: 3px solid #64748b;
+
+    transition: 0.2s;
+}
+
+/* Results */
+
+.results {
+    margin-top: 30px;
+}
+
+.results h2 {
+    margin-bottom: 18px;
+}
+
+.ratio-box {
+    background: #0f172a;
+
+    padding: 18px;
+
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 15px;
+}
+
+.ratio-box strong {
+    font-size: 22px;
+    color: #14b8a6;
+}
+
+.result-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 0;
+
+    border-bottom: 1px solid #334155;
+
+    gap: 15px;
+}
+
+/* PASS / FAIL */
+
+.pass {
+    color: #22c55e;
+    font-weight: bold;
+}
+
+.fail {
+    color: #ef4444;
+    font-weight: bold;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .container {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .result-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}

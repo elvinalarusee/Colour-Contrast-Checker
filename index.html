@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Colour Contrast Checker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Colour Contrast Checker</h1>
+
+        <p class="subtitle">
+            Check if your text is readable and meets WCAG accessibility standards.
+        </p>
+
+        <!-- Colour Pickers -->
+        <div class="picker-group">
+
+            <div class="picker">
+                <label for="textColor">Text Colour</label>
+                <input type="color" id="textColor" value="#000000">
+                <span id="textHex">#000000</span>
+            </div>
+
+            <div class="picker">
+                <label for="bgColor">Background Colour</label>
+                <input type="color" id="bgColor" value="#ffffff">
+                <span id="bgHex">#FFFFFF</span>
+            </div>
+
+        </div>
+
+        <!-- Swap Button -->
+        <button id="swapBtn">⇄ Swap Colours</button>
+
+        <!-- Preview -->
+        <div class="preview" id="preview">
+            <p>Is this text readable?</p>
+        </div>
+
+        <!-- Results -->
+        <div class="results">
+
+            <h2>Contrast Results</h2>
+
+            <div class="ratio-box">
+                <span>Contrast Ratio</span>
+                <strong id="ratio">21.00:1</strong>
+            </div>
+
+            <div class="result-row">
+                <span>WCAG AA — Normal Text</span>
+                <span id="aaNormal"></span>
+            </div>
+
+            <div class="result-row">
+                <span>WCAG AA — Large Text</span>
+                <span id="aaLarge"></span>
+            </div>
+
+            <div class="result-row">
+                <span>WCAG AAA — Normal Text</span>
+                <span id="aaaNormal"></span>
+            </div>
+
+            <div class="result-row">
+                <span>WCAG AAA — Large Text</span>
+                <span id="aaaLarge"></span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
